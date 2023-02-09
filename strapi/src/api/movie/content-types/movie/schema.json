@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "singularName": "movie",
+    "pluralName": "movies",
+    "displayName": "Movie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Release_Date": {
+      "type": "date"
+    },
+    "Genre": {
+      "type": "enumeration",
+      "enum": [
+        "Horror",
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "default": "Action"
+    }
+  }
+}
